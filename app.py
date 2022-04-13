@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 app.config['SECRET_KEY'] = 'secret key'
-# postgres://sbwyeplauuclkr:a235e939052d7ddaa984629bedee8fa87f3eb947cebd7b149cb9507124c48256@ec2-34-207-12-160.compute-1.amazonaws.com:5432/db8rvmk1383tb6
 db = SQLAlchemy(app)
 
 class Blogpost(db.Model):
